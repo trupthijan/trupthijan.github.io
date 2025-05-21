@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="index.html">Dr. M. Trupthi</a>
@@ -15,7 +16,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
@@ -23,59 +23,177 @@
     </div>
   </nav>
 
+  <!-- Tabs -->
   <div class="container mt-5">
     <h1>Fundamentals of Software Engineering</h1>
-    <p><strong>Course Code:</strong> A54030 </p>
-    <p><strong>Offered to:</strong> B.Tech AI & AIML- 2nd Year (3rd Semester)</p>
-    <p><strong>Instructor:</strong> Dr. M. Trupthi</p>  
-   
-    <h3 class="mt-4">Topics Covered</h3>
-    <ol>
-      <li>Introduction to Software Engineering</li><li>Software Development Life Cycle Models</li><li>Requirement Analysis and Design</li><li>UML Diagrams and Architecture Design</li><li>Agile Methodologies and Scrum</li><li>Software Testing and Maintenance</li><li>Project Estimation and Planning</li><li>Tools: GitHub, Jira, Draw.io</li>
-    </ol>
-
-    <h3 class="mt-4">Course Objectives</h3>
-    <ul>
-      <li>To introduce the basics of software engineering and types of software development projects in software industry </li>
-      <li>To classify various Software Life Cycle Models </li>
-      <li>To identify and select suitable Software Project Management Processes </li>
-      <li>To list the steps or phases of Software Development Process and related artifacts </li>
-      <li>To use Agile Software Development practices and DevOps </li>
+    <ul class="nav nav-tabs" id="seTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button">
+          Home
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="syllabus-tab" data-bs-toggle="tab" data-bs-target="#syllabus" type="button">
+          Syllabus
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="notes-tab" data-bs-toggle="tab" data-bs-target="#notes" type="button">
+          Notes
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="qp-tab" data-bs-toggle="tab" data-bs-target="#qp" type="button">
+          Reference QP
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="obe-tab" data-bs-toggle="tab" data-bs-target="#obe" type="button">
+          OBE
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tlp-tab" data-bs-toggle="tab" data-bs-target="#tlp" type="button">
+          TLP Activity
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="cert-tab" data-bs-toggle="tab" data-bs-target="#cert" type="button">
+          Certification
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="nba-tab" data-bs-toggle="tab" data-bs-target="#nba" type="button">
+          NBA
+        </button>
+      </li>
     </ul>
 
-    <h3 class="mt-4">Course Outcomes</h3>
-    <ol>
-      <li>After Cpmpletion of the course students will be able to:</li>      
-      <li>Understand the emergence of software engineering and types of software development projects</li>
-      <li>Infer merits and demerits of software life cycle models and selecting appropriate model for a project </li>
-      <li>Apply the software project management practices and techniques essential for successful completion of a project </li>
-      <li>Analyze the steps or phases involved in software development processes and its related artifacts </li>
-      <li>Apply Agile Software Development practices and DevOps</li>
-     </ol>
+    <div class="tab-content mt-4" id="seTabContent">
+      <!-- Home -->
+      <div class="tab-pane fade show active" id="home">
+        <h3>Course Information Sheet</h3>
+        <p><strong>Subject:</strong> Fundamentals of Software Engineering</p>
+        <p><strong>Academic Year:</strong> 2024–25</p>
+        <p><strong>Faculty:</strong> Dr. M. Trupthi</p>
+        <p><strong>Dept:</strong> AI & AIML, Anurag University</p>
+        <p><strong>Year/Sem:</strong> II Year / I Sem</p>
+        <p><strong>Credits:</strong> 3  |  <strong>Code:</strong> A54030  |  <strong>Regulation:</strong> R22</p>
+      </div>
 
-    <h3 class="mt-4">Assessment</h3>
-    <ul>
-      <li>Assignments: 20%</li>
-      <li>Mid-term Exam: 30%</li>
-      <li>Final Exam: 50%</li>
-    </ul>
-   <h3 class="mt-4">Text Book</h3>
-    <ul>
-      <li>Rajib Mall, Fundamentals of Software Engineering,4th Ed., 2014, PHI Learning References</li>
-    </ul>
-    <h3 class="mt-4">Reference Books</h3>
-    <ul>
-      <li>Pressman, R. S., Software Engineering: A Practitioner's Approach, Tata Mc Graw Hill, 2009 </li>
-      <li>Jalote, P (2005), An Integrated Approach to Software Engineering, Narosa Publishing House .</li>
-    </ul>
+      <!-- Syllabus -->
+      <div class="tab-pane fade" id="syllabus">
+        <h3>Unit I</h3>
+        <ul>
+          <li>Evolution from Art to Engineering Discipline</li>
+          <li>Software Life Cycle Models: Waterfall, V‑Model, RAD, Spiral</li>
+          <li>Comparison & Model Selection</li>
+        </ul>
+        <h3>Unit II</h3>
+        <ul>
+          <li>Project Management: COCOMO, Halstead’s Metrics</li>
+          <li>Scheduling: CPM, PERT, Gantt Charts</li>
+          <li>Risk & Configuration Management</li>
+        </ul>
+        <h3>Unit III</h3>
+        <ul>
+          <li>Requirements Analysis & SRS</li>
+          <li>Design: Cohesion, Coupling, UML, DFDs</li>
+          <li>Testing: Black‑box, White‑box, Integration</li>
+        </ul>
+        <h3>Unit IV</h3>
+        <ul>
+          <li>Coding Standards & Documentation</li>
+          <li>Debugging & Deployment</li>
+          <li>Maintenance & DevOps</li>
+        </ul>
+        <h3>Unit V</h3>
+        <ul>
+          <li>Agile Methodologies: SCRUM, Sprints</li>
+          <li>Roles: Owner, PM, QA, DevOps</li>
+          <li>Case Studies & Tools</li>
+        </ul>
+      </div>
 
-    <h3 class="mt-4">E Resources</h3>
-    <ul>
-      <li>http://vlabs.iitkgp.ac.in/se/ </li>
-      <li>https://video.search.yahoo.com/search/video?fr=mcafee&p=scrum+in+software+engineering+video+lectures&type=E210US739G0#id=1&vid=58d5f99773b5158ab93c295468
-          068785&action=click </li>
-    </ul>
-    </ul>
+      <!-- Notes -->
+      <div class="tab-pane fade" id="notes">
+        <h3>Lecture Notes & PPTs</h3>
+        <p>Upload your PPT files to the `notes/` folder in your repo, then list them below:</p>
+        <ul>
+          <li><a href="notes/unit1.pptx">Unit 1 – Introduction.pptx</a></li>
+          <li><a href="notes/unit2.pptx">Unit 2 – Models.pptx</a></li>
+          <!-- continue for Unit 3–5 -->
+        </ul>
+      </div>
+
+      <!-- Reference QP -->
+      <div class="tab-pane fade" id="qp">
+        <h3>Previous Question Papers</h3>
+        <p>Store images in `qp/` and link them here:</p>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="qp/mid1.png" class="img-fluid mb-3" alt="Mid I QP">
+          </div>
+          <div class="col-md-4">
+            <img src="qp/mid2.png" class="img-fluid mb-3" alt="Mid II QP">
+          </div>
+        </div>
+      </div>
+
+      <!-- OBE -->
+      <div class="tab-pane fade" id="obe">
+        <h3>Programme Educational Objectives (PEOs)</h3>
+        <ul>
+          <li>PEO1: Careers in AI & Allied Fields</li>
+          <li>PEO2: Lifelong Learning</li>
+          <li>PEO3: Innovation & Entrepreneurship</li>
+          <li>PEO4: Ethical Leadership</li>
+        </ul>
+        <h3>Programme Outcomes (POs)</h3>
+        <ul>
+          <li>PO1: Engineering knowledge</li>
+          <li>PO2: Problem analysis</li>
+          <!-- ... up to PO11 -->
+        </ul>
+        <h3>Programme Specific Outcomes (PSOs)</h3>
+        <ul>
+          <li>PSO1: Core AI Competency</li>
+          <li>PSO2: Real‑world Problem Solving</li>
+          <li>PSO3: Tools & Technologies</li>
+          <li>PSO4: Ethics & Impact</li>
+        </ul>
+      </div>
+
+      <!-- TLP Activity -->
+      <div class="tab-pane fade" id="tlp">
+        <h3>Teaching–Learning Activities</h3>
+        <p>Upload your lesson plans & activity docs in `tlp/`:</p>
+        <ul>
+          <li><a href="tlp/unit1_activity.pdf">Unit 1 Activity</a></li>
+          <li><a href="tlp/unit2_activity.pdf">Unit 2 Activity</a></li>
+        </ul>
+      </div>
+
+      <!-- Certification -->
+      <div class="tab-pane fade" id="cert">
+        <h3>Certification & E‑resources</h3>
+        <p>
+          <a href="https://drive.google.com/drive/folders/your-drive-folder-id" target="_blank">
+            Access course resources & certifications
+          </a>
+        </p>
+      </div>
+
+      <!-- NBA -->
+      <div class="tab-pane fade" id="nba">
+        <h3>NBA Documents</h3>
+        <p>Place your Excel/Word files in `nba/` and link them:</p>
+        <ul>
+          <li><a href="nba/coursefile.xlsx">Course File Index</a></li>
+          <li><a href="nba/tlp_plan.docx">Lesson Plan Document</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
